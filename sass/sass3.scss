@@ -1,0 +1,19 @@
+// MIXINS 
+
+// Este mixin en particular lo que hace es restar opacidad a las imagenes al hacer hover encima de ellas
+// Ademas tambien hay una operacion que es una resta
+@mixin opacidadfoto($property) {
+    opacity: $property - 0.3;
+}
+
+// Es mixin que al hacer over sobre los dos botones superiores en la pagina index cambia el color de la letra al especificado, en este caso es black
+@mixin color_boton($property){
+    color: $property;
+}
+
+// Este mixin hace que las fotos roten al hacer hover encima de ellas
+@mixin transform($property) {
+    -webkit-transform: $property;
+    -ms-transform: $property;
+    transform: $property;
+  }
